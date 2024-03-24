@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <div class="initial-text">
+          <div>
+            <p class="top-text">Weather Forecast</p>
+          </div>
+          <div>
+            <form id="search-form">
+              <div class="search-container">
+                <input
+                  type="search"
+                  class="search-input"
+                  placeholder="Enter a city name..."
+                  required
+                  id="search-form-input"
+                />
+                <div onclick="handleSearchSubmit()" class="search-icon"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="weather-info">
+          <div class="temp-contain">
+            <span id="icon"></span>
+            <span class="weather-temperature-number" id="temperature"></span>
+            <span class="weather-unit">C°</span>
+          </div>
+          <div class="container">
+            <div class="left">
+              <h1 class="city-title" id="city"></h1>
+            </div>
+
+            <div>
+              <p class="right-text">
+                <span id="time"> </span><span id="description"> </span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="list-items">
+          <div class="list-item">
+            <span class="card-title">Current Temperature</span><br />
+            <span class="card-subtitle" id="current-temperature"></span>
+          </div>
+          <div class="list-item">
+            <span class="card-title">Wind Speed</span><br />
+            <span class="card-subtitle" id="wind-speed"></span>
+          </div>
+          <div class="list-item">
+            <span class="card-title">Humidity</span><br />
+            <span class="card-subtitle" id="humidity"></span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/katyyanza" target="_blank"> Katy Yanza </a>
+        is
+        <a href="https://github.com/katyyanza/my-weather-app" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and
+        <a href="https://weather-shecodes-proj.netlify.app/" target="_blank>">
+          hosted on netlify
+        </a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
