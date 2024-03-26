@@ -40,6 +40,21 @@ a {
 .top-text {
   margin: 10px;
   margin-right: 19px;
+
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(23, 134, 206, 1) 40%,
+    rgba(26, 153, 236, 1) 74%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .weather-emoji {
@@ -70,20 +85,22 @@ a {
 .weather-unit {
   text-shadow: 1px 1px 1px black;
   color: white;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 36px;
   line-height: 1;
   position: relative;
-  top: -15px;
+  top: -20px;
   margin-left: -4px;
 }
 .card-title {
   font-size: 20px;
+  font-family: sans-serif;
 }
 
 .card-subtitle {
   font-size: 14px;
+  font-family: sans-serif;
 }
 
 .weather-app {
@@ -142,16 +159,20 @@ a {
 .weather-forecast-date {
   text-align: center;
   margin-top: 20px;
+  font-weight: 500;
 }
 .weather-forecast-icon {
   width: 85%;
   display: block;
   margin: 0 auto;
 }
+.weather-forecast-day {
+  text-align: center;
+}
 
 footer {
   color: #27214266;
-  font-size: 12px;
-  margin-top: 30px;
+  font-size: 13px;
+  margin-top: 50px;
   text-align: center;
 }
