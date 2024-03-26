@@ -139,6 +139,15 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.weather-forecast-date {
+  text-align: center;
+  margin-top: 20px;
+}
+.weather-forecast-icon {
+  width: 85%;
+  display: block;
+  margin: 0 auto;
+}
 
 footer {
   color: #27214266;
